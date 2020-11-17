@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- this scales the content to display nicely on mobiles/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> ArchiTEC- Home</title>
+
+    <!-- Bootstrap and FontAwesome cdn links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- our custom styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <!-- ==== NAV BAR (BOOTSTRAP) ===== -->
+    <!-- use the "fixed-top" bootstrap class to fix the nav bar to the top of page.
+         BUT, remember to add enough padding to the top of the <body> -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="./index.html">ArchiTEC</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./WebsiteCFG.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ==== END NAV BAR ===== -->
+
+    <main>
+
+      <!-- ==== carousel section (BOOTSTRAP) ==== -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/clouds-cloudy-conifers.jpg" class="d-block w-100" alt="cloudy conifers landscape">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/lavendar-landscape.jpg" class="d-block w-100" alt="lavendar landscape">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/nat-geo-epic.jpg" class="d-block w-100" alt="nat geo epic lanscape">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- ==== END carousel section ==== -->
+
+      <!-- ==== secondary nav bar ==== -->
+      <div id="second-navbar">
+        <!-- you can specify the id of an element in the href. clicking the link will then take you to that element -->
+        <a class="btn" href="#meet-the-team" role="button">The Team</a>
+        <a class="btn" href="#section-1" role="button">ArchiTEC</a>
+        <a class="btn" href="#section-2" role="button">London Locations</a>
+        <a class="btn" href="contact.html" role="button">Contact Us</a>
+      </div>
+
+  
+
+      <hr/>
+
+      <!-- ==== photograph grid ==== -->
+      <div class="container" id="meet-the-team">
+        <h2>Meet The Team</h2>
+        <div class="row">
+          <div class="col-sm-7 col-lg-4">
+            <!-- you can wrap the <img> within an <a> tag, this turns the img into a link -->
+            <a href="https://www.codefirstgirls.org.uk/" target="_blank">
+              <img src="./images/team1.jpg" alt="teammate 1"/>
+            </a>
+          </div>
+          <div class="col-sm-7 col-lg-4">
+            <img src="./images/team2.jpg" alt="teammate 2"/>
+          </div>
+          <div class="col-sm-7 col-lg-4">
+            <img src="./images/team3.jpg" alt="teammate 3"/>
+          </div>
+          </div>
+        </div>
+      <!-- ==== END photograph grid ==== -->
+
+      <hr/>
+
+      <!-- ==== three sections of filler text (generated from https://hipsum.co/) ==== -->
+      <div class="container" id="section-1">
+        <h2>ArchiTEC</h2>
+        <p>
+          This website is a Go-To guide for any young architect. We will recommend you landmarks and places to visit - one city at a time. 
+        </p>
+        <p>
+         Every month we will update the map with destinations for you to visit. We hope you will join us on this journey.
+        </p>
+      </div>
+
+      <hr/>
+
+      <div class="container" id="section-2">
+        <h2>London & the Architectural History </h2>
+        <p>
+          London is a unique city and is the capital of England. The city has something for everyone. The city's history stretches back to Roman times. It is home to the iconic building 'Big Ben'. 
+        </p>
+        <p>
+          After the 'Great Fire of London' in 1666, almost all of London burnt down. 
+        </p>
+        <p>
+          The new buildings after this tragedy followed the baroque design. One of the most iconic architects of this era was Chirstoper Wren. When London expanded, the Georgian style shaped the capital. The focus was on building London's great estates - the Grosvenor Estate and the Bedford Estate. You will mainly find London's Georgian buildings in central parts of the capital.
+        </p>
+        <p>
+          For a brief period between 1811-1820, the Regency stule left a significant mark on London. 
+        </p>
+        <p>
+          Regency is a stringent form of Classicism, and is directly referencing Graeco-Roman architecture and structures. Georgian features such as sash windows were popular.
+        </p>
+        <p>
+          The years between 1837 - 1901 marks the Victorian Style. Referencing to Queen Victorias reign. Buildings such as St. Pancras Station and the Houses of Parliament are examples of buildings in a gothic style from this time. In the Victoria period, we were also introduced to mass housing. Most of the homes were built for the middle class.
+        </p>
+        <p>
+          After the Victorian era, we were introduced to the Edwardian architecture 1901-1910. An era of revivalism by the Baroque and Georgian. The context of this era was a rapid increase of population and new railways. This gave rise to the 'suburbs'. Edwardian homes were often built on larger plots in the suburbs. Edwardian homes can be identified by Dutch gables, deep bay windows & sash windows. The majority of Edwardian homes can be found today in Hampstead Heath, Dulwich, Blackheath, and Richmond.
+        </p> 
+        <p>
+          In the 50's, post-war, we are introduced to the Brutalist architecture. Hundreds of thousands citizens had been evacuated. There was a national emergency and need for housing and reconstruction of a habitable urban envirnment, hence the extended use of concrete. Brutalism can be identified by simple, block-like forms and concrete construction. Examples of brutalism are the Hayward Gallery and National Theatre in South Bank.
+        </p>
+        <p>
+          In present day, developers continue constructing tall apartment blocks. Unlike the practical and somewhat unattractive designs of the 50's, the buildings now are more modern and luxurious.
+        </p>
+
+        <p>
+          Look at our page for more information about these beautiful buildings and locations.
+        </p>
+      </div>
+
+      <hr/>
+
+      <div class="container" id="section-3">
+        <h2>Contact us</h2>
+        <p>
+         Please contact us if you have any questions or enquiries about locations.
+        </p>
+      </div>
+      <!-- ==== END three sections of filler text ==== -->
+    </main>
+
+    <footer>
+      <!-- ==== social icons ==== -->
+      <a href="https://twitter.com" target="_blank">
+        <span class='social-icon'><i class="fab fa-twitter"></i></span>
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <span class='social-icon'><i class="fab fa-facebook-f"></i></span>
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <span class='social-icon'><i class="fab fa-instagram"></i></span>
+      </a>
+    </footer>
+
+    <!-- ==== button that scrolls window to the top ==== -->
+    <button class="btn btn-primary" onclick="topFunction()" id="go-top-button" title="Go to top">Top</button>
+
+    <!-- Bootstrap needs the these 3 javascript links for things like carousel and modals to work properly.
+         we also need jQuery for the code for the "scroll to the top" code in scripts.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- our custom javascript -->
+    <script src="./js/scripts.js"></script>
+  </body>
+
+</html>
